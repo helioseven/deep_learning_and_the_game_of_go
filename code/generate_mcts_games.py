@@ -21,7 +21,7 @@ def generate_game(board_size, rounds, max_moves, temperature):
 
     num_moves = 0
     while not game.is_over():
-        print_board(game.board)
+#        print_board(game.board)
         move = bot.select_move(game)  # <5>
         if move.is_play:
             boards.append(encoder.encode(game))  # <6>
@@ -30,7 +30,7 @@ def generate_game(board_size, rounds, max_moves, temperature):
             move_one_hot[encoder.encode_point(move.point)] = 1
             moves.append(move_one_hot)  # <7>
 
-        print_move(game.next_player, move)
+#        print_move(game.next_player, move)
         game = game.apply_move(move)  # <8>
         num_moves += 1
         if num_moves > max_moves:  # <9>

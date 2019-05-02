@@ -7,17 +7,17 @@ from keras.layers import Dense
 
 np.random.seed(123)  # <1>
 # TODO: tell readers where to put file
-X = np.load('../generated_games/features-200.npy')  # <2>
-Y = np.load('../generated_games/labels-200.npy')
+X = np.load('../generated_games/features-40k.npy')  # <2>
+Y = np.load('../generated_games/labels-40k.npy')
 samples = X.shape[0]
 board_size = 9 * 9
 
 X = X.reshape(samples, board_size)  # <3>
 Y = Y.reshape(samples, board_size)
 
-train_samples = 10000
-X_train, X_test = X[:train_samples], X[train_samples:]
-Y_train, Y_test = Y[:train_samples], Y[train_samples:]
+test_samples = 5000
+X_train, X_test = X[:-test_samples], X[-test_samples:]
+Y_train, Y_test = Y[:-test_samples], Y[-test_samples:]
 # end::mcts_go_mlp_preprocessing[]
 
 # tag::mcts_go_mlp_model[]
@@ -38,7 +38,10 @@ model.fit(X_train, Y_train,
           verbose=1,
           validation_data=(X_test, Y_test))
 
+score = model.evaluate(X_train, Y_train, verbose=0)
+print('Train loss:', score[0] * 100)
+print('Train accuracy:', score[1] * 100)
 score = model.evaluate(X_test, Y_test, verbose=0)
-print('Test loss:', score[0])
-print('Test accuracy:', score[1])
+print('Test loss:', score[0] * 100)
+print('Test accuracy:', score[1] * 100)
 # end::mcts_go_mlp_model[]
