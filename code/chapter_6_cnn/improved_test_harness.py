@@ -1,15 +1,16 @@
 from __future__ import print_function
+import matplotlib.pyplot as plt
+from timer import TimeHistory
 import copy
 import math
-import time
 
 # tag::mcts_go_preprocessing[]
 import numpy as np
-from keras.models import Sequential
 from keras.layers import Conv2D, Dense, Dropout, Flatten, MaxPooling2D
+from keras.models import Sequential
 
-np.random.seed(123)  # <1>
-X = np.load('../generated_games/features-40k.npy')  # <2>
+np.random.seed(123)
+X = np.load('../generated_games/features-40k.npy')
 Y = np.load('../generated_games/labels-40k.npy')
 W = copy.deepcopy(X)
 Z = copy.deepcopy(Y)
@@ -19,7 +20,7 @@ size = 9
 board_size = size ** 2
 test_samples = 5000
 
-X = X.reshape(samples, board_size)  # <3>
+X = X.reshape(samples, board_size)
 Y = Y.reshape(samples, board_size)
 X_train, X_test = X[:-test_samples], X[-test_samples:]
 Y_train, Y_test = Y[:-test_samples], Y[-test_samples:]
@@ -98,45 +99,69 @@ model_6.compile(loss='mean_squared_error', optimizer='sgd', metrics=['accuracy']
 # end:: four_layer_224_cnn_model[]
 
 # start_tests
-time.clock()
-x, y, z = 16, 7, 4
-scores = [[[0 for a in range(z)] for b in range(y)] for c in range(x)]
-times = [[0 for b in range(y)] for c in range(x)]
+m = 7
 model = [model_0, model_1, model_2, model_3, model_4, model_5, model_6]
 names = [
-    '81n/1 mlp',
-    '300n/1 mlp',
-    '700n/1 mlp',
-    '2100n/1 mlp',
-    '700n/3 mlp',
-    '224n/2 cnn',
-    '224n/3 cnn']
+    '81n/1_mlp',
+    '300n/1_mlp',
+    '700n/1_mlp',
+    '2100n/1_mlp',
+    '700n/3_mlp',
+    '224n/2_cnn',
+    '224n/3_cnn']
+e = 1000
+callback_times = TimeHistory()
+model_histories = [{} for x in range(m)]
+model_times = [[] for x in range(m)]
 
-for n in range(x):
-    for i in range(y):
-        start_time = time.clock()
-        e = 8 + math.floor(1.4**n)
-        if i < 5:
-            model[i].fit(X_train, Y_train, batch_size=128, epochs=e, verbose=0, validation_data=(X_test, Y_test))
-            times[n][i] = time.clock() - start_time;
-            scores[n][i][0], scores[n][i][1] = model[i].evaluate(X_train, Y_train, verbose=0)
-            scores[n][i][2], scores[n][i][3] = model[i].evaluate(X_test, Y_test, verbose=0)
-        else:
-            model[i].fit(W_train, Z_train, batch_size=128, epochs=e, verbose=0, validation_data=(W_test, Z_test))
-            times[n][i] = time.clock() - start_time;
-            scores[n][i][0], scores[n][i][1] = model[i].evaluate(W_train, Z_train, verbose=0)
-            scores[n][i][2], scores[n][i][3] = model[i].evaluate(W_test, Z_test, verbose=0)
+for i in range(m):
+    if i < 5:
+        model_histories[i] = model[i].fit(
+            X_train,
+            Y_train,
+            batch_size=64,
+            callbacks=[callback_times],
+            epochs=e,
+            verbose=1,
+            validation_data=(X_test, Y_test))
+    else:
+        model_histories[i] = model[i].fit(
+            W_train,
+            Z_train,
+            batch_size=64,
+            callbacks=[callback_times],
+            epochs=e,
+            verbose=1,
+            validation_data=(W_test, Z_test))
+    model_times[i] = callback_times.times
+    model[i].save(names[i] + '.h5')
 
-for i in range(y):
-    cumulative = 0
-    epochs = 0
-    for n in range(x):
-        epochs += 8 + math.floor(1.4**n)
-        print('Statistics for', names[i], ', after', epochs, 'epochs.')
-        print('Training test loss:', scores[n][i][0] * 100)
-        print('Validate test loss:', scores[n][i][2] * 100)
-        print('Training test accuracy:', scores[n][i][1] * 100)
-        print('Validate test accuracy:', scores[n][i][3] * 100)
-        cumulative += times[n][i]
-        print('Total training time:', cumulative, '\n');
+file1 = 'loss_history.png'
+file2 = 'test_history.png'
+
+fig = plt.figure()
+for i in range(m):
+    plt.loglog(model_times[i], model_histories[i].history['loss'])
+plt.title('MSE Loss / Time')
+plt.ylabel('MSE Loss')
+plt.xlabel('Seconds')
+names_2 = [x + '_loss' for x in names]
+plt.legend(names_2, bbox_to_anchor=(1.04,0.5), loc='center left')
+fig.savefig(file1, dpi=fig.dpi, bbox_inches='tight')
+
+fig = plt.figure()
+for i in range(m):
+    plt.semilogx(callback_times.times, model_histories[i].history['acc'])
+    plt.semilogx(callback_times.times, model_histories[i].history['val_acc'])
+plt.title('Test % / Time')
+plt.ylabel('Test %')
+plt.xlabel('Seconds')
+names_2 = ['' for x in range(len(names) * 2)]
+for n in range(len(names_2)):
+    if n % 2 == 0:
+        names_2[n] = names[math.floor(n/2)] + '_train_acc'
+    else:
+        names_2[n] = names[math.floor((n-1)/2)] + '_valid_acc'
+plt.legend(names_2, bbox_to_anchor=(1.04,0.5), loc='center left')
+fig.savefig(file2, dpi=fig.dpi, bbox_inches='tight')
 # end_tests
