@@ -1,0 +1,587 @@
+Statistics for 300n/1 mlp , after 1 epochs.
+Training test loss: 15.3789037076989
+Validate test loss: 15.382890305519103
+Training test accuracy: 0.7464529762068114
+Validate test accuracy: 0.66
+Total training time: 2.1117762179548563 
+
+Statistics for 300n/1 mlp , after 2 epochs.
+Training test loss: 9.713623792459767
+Validate test loss: 9.716949342489242
+Training test accuracy: 0.7354757265567112
+Validate test accuracy: 0.6799999999999999
+Total training time: 3.5359699964239595 
+
+Statistics for 300n/1 mlp , after 3 epochs.
+Training test loss: 6.700346095413816
+Validate test loss: 6.70311045050621
+Training test accuracy: 0.7519416010318615
+Validate test accuracy: 0.66
+Total training time: 5.039459079726173 
+
+Statistics for 300n/1 mlp , after 4 epochs.
+Training test loss: 5.0690636623351955
+Validate test loss: 5.07121697306633
+Training test accuracy: 0.7574302258569116
+Validate test accuracy: 0.66
+Total training time: 6.553087609113236 
+
+Statistics for 300n/1 mlp , after 6 epochs.
+Training test loss: 3.529814989954833
+Validate test loss: 3.5311240422725674
+Training test accuracy: 0.7382200389692363
+Validate test accuracy: 0.66
+Total training time: 9.604722817686325 
+
+Statistics for 300n/1 mlp , after 8 epochs.
+Training test loss: 2.8266709826903216
+Validate test loss: 2.8275528043508533
+Training test accuracy: 0.8013392244573122
+Validate test accuracy: 0.76
+Total training time: 12.388592133880723 
+
+Statistics for 300n/1 mlp , after 10 epochs.
+Training test loss: 2.432286945820352
+Validate test loss: 2.4329291057586673
+Training test accuracy: 0.919344658195889
+Validate test accuracy: 0.9400000000000001
+Total training time: 15.151837166993305 
+
+Statistics for 300n/1 mlp , after 13 epochs.
+Training test loss: 2.090247073642841
+Validate test loss: 2.090684677660465
+Training test accuracy: 1.2596393973489943
+Validate test accuracy: 1.16
+Total training time: 19.310540627155618 
+
+Statistics for 300n/1 mlp , after 17 epochs.
+Training test loss: 1.8395848626437992
+Validate test loss: 1.8398763012886048
+Training test accuracy: 1.569746699964324
+Validate test accuracy: 1.66
+Total training time: 24.873155065375002 
+
+Statistics for 300n/1 mlp , after 22 epochs.
+Training test loss: 1.666366410016124
+Validate test loss: 1.6665600907802582
+Training test accuracy: 1.7865473805538021
+Validate test accuracy: 1.7000000000000002
+Total training time: 31.79391056769164 
+
+Statistics for 300n/1 mlp , after 28 epochs.
+Training test loss: 1.5477932443695432
+Validate test loss: 1.5479224215447902
+Training test accuracy: 1.9429731880677297
+Validate test accuracy: 1.7999999999999998
+Total training time: 40.12677360920311 
+
+Statistics for 300n/1 mlp , after 35 epochs.
+Training test loss: 1.4656893467405014
+Validate test loss: 1.4657757565379144
+Training test accuracy: 2.0774444962814567
+Validate test accuracy: 1.9800000000000002
+Total training time: 49.917533645080724 
+
+Statistics for 700n/1 mlp , after 1 epochs.
+Training test loss: 8.06298452121009
+Validate test loss: 8.060807330608368
+Training test accuracy: 0.4281127363539065
+Validate test accuracy: 0.5
+Total training time: 2.909726931111367 
+
+Statistics for 700n/1 mlp , after 2 epochs.
+Training test loss: 4.329000245867162
+Validate test loss: 4.327955143451691
+Training test accuracy: 0.9412991574960894
+Validate test accuracy: 1.0
+Total training time: 5.232922446794165 
+
+Statistics for 700n/1 mlp , after 3 epochs.
+Training test loss: 3.112948012226365
+Validate test loss: 3.1122888177633286
+Training test accuracy: 1.1553555257241594
+Validate test accuracy: 1.34
+Total training time: 7.456397694918708 
+
+Statistics for 700n/1 mlp , after 4 epochs.
+Training test loss: 2.5441795441396735
+Validate test loss: 2.5436992084980012
+Training test accuracy: 1.4188095173265634
+Validate test accuracy: 1.54
+Total training time: 9.807601140425108 
+
+Statistics for 700n/1 mlp , after 6 epochs.
+Training test loss: 2.017314177431877
+Validate test loss: 2.016997285783291
+Training test accuracy: 1.778314443367344
+Validate test accuracy: 1.54
+Total training time: 16.242566523169046 
+
+Statistics for 700n/1 mlp , after 8 epochs.
+Training test loss: 1.7750941904824453
+Validate test loss: 1.7748521050810813
+Training test accuracy: 1.8798540026307704
+Validate test accuracy: 1.76
+Total training time: 20.818072298574066 
+
+Statistics for 700n/1 mlp , after 10 epochs.
+Training test loss: 1.638476619775886
+Validate test loss: 1.6382772213220598
+Training test accuracy: 2.050001372207323
+Validate test accuracy: 1.9
+Total training time: 25.365439218038887 
+
+Statistics for 700n/1 mlp , after 13 epochs.
+Training test loss: 1.5194068066621425
+Validate test loss: 1.519245621562004
+Training test accuracy: 2.253080490734176
+Validate test accuracy: 2.02
+Total training time: 32.247996537297354 
+
+Statistics for 700n/1 mlp , after 17 epochs.
+Training test loss: 1.431710185868161
+Validate test loss: 1.4315786477923393
+Training test accuracy: 2.3299212382848773
+Validate test accuracy: 2.04
+Total training time: 41.43761761366636 
+
+Statistics for 700n/1 mlp , after 22 epochs.
+Training test loss: 1.3708632237872491
+Validate test loss: 1.3707538977265357
+Training test accuracy: 2.4040176734230534
+Validate test accuracy: 2.06
+Total training time: 52.97235065140626 
+
+Statistics for 700n/1 mlp , after 28 epochs.
+Training test loss: 1.3291138402292428
+Validate test loss: 1.329021351635456
+Training test accuracy: 2.4643925464474874
+Validate test accuracy: 2.08
+Total training time: 66.80304999228133 
+
+Statistics for 700n/1 mlp , after 35 epochs.
+Training test loss: 1.3001943947941847
+Validate test loss: 1.30011493653059
+Training test accuracy: 2.494579982985263
+Validate test accuracy: 2.18
+Total training time: 82.91780673351082 
+
+Statistics for 700n/3 mlp , after 1 epochs.
+Training test loss: 16.40903289512934
+Validate test loss: 16.409649736881256
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 3.9406215863946272 
+
+Statistics for 700n/3 mlp , after 2 epochs.
+Training test loss: 11.339305881916383
+Validate test loss: 11.340045349597931
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 6.774873030978682 
+
+Statistics for 700n/3 mlp , after 3 epochs.
+Training test loss: 8.195738706796746
+Validate test loss: 8.19627637386322
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 9.663635661929248 
+
+Statistics for 700n/3 mlp , after 4 epochs.
+Training test loss: 6.187714866739933
+Validate test loss: 6.18804090499878
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 12.537520591551555 
+
+Statistics for 700n/3 mlp , after 6 epochs.
+Training test loss: 3.961373209397566
+Validate test loss: 3.961562303900719
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 20.640464181936494 
+
+Statistics for 700n/3 mlp , after 8 epochs.
+Training test loss: 2.981661015590352
+Validate test loss: 2.981817010045052
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 26.546485122298662 
+
+Statistics for 700n/3 mlp , after 10 epochs.
+Training test loss: 2.4770878745015126
+Validate test loss: 2.4772218841314317
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 32.45197209905834 
+
+Statistics for 700n/3 mlp , after 13 epochs.
+Training test loss: 2.0677684001989967
+Validate test loss: 2.06788099527359
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 41.46756012342232 
+
+Statistics for 700n/3 mlp , after 17 epochs.
+Training test loss: 1.7874626057624927
+Validate test loss: 1.787557812333107
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 53.33648989035427 
+
+Statistics for 700n/3 mlp , after 22 epochs.
+Training test loss: 1.6059481625500724
+Validate test loss: 1.6060299521684647
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 68.21736813101992 
+
+Statistics for 700n/3 mlp , after 28 epochs.
+Training test loss: 1.488913681176941
+Validate test loss: 1.4889852181077003
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 86.04084943692018 
+
+Statistics for 700n/3 mlp , after 35 epochs.
+Training test loss: 1.4121189543668071
+Validate test loss: 1.4121825540065767
+Training test accuracy: 1.8963198771059206
+Validate test accuracy: 1.92
+Total training time: 106.9670359304258 
+
+Statistics for 900n/3 mlp , after 1 epochs.
+Training test loss: 15.569192578027439
+Validate test loss: 15.570229306221009
+Training test accuracy: 0.5763056066302588
+Validate test accuracy: 0.64
+Total training time: 5.146476035635356 
+
+Statistics for 900n/3 mlp , after 2 epochs.
+Training test loss: 9.45999694266311
+Validate test loss: 9.460557632446289
+Training test accuracy: 0.5763056066302588
+Validate test accuracy: 0.64
+Total training time: 9.098089553463776 
+
+Statistics for 900n/3 mlp , after 3 epochs.
+Training test loss: 6.384439892706408
+Validate test loss: 6.384783976078033
+Training test accuracy: 0.5817942314553088
+Validate test accuracy: 0.72
+Total training time: 13.256279568295579 
+
+Statistics for 900n/3 mlp , after 4 epochs.
+Training test loss: 4.756924038592764
+Validate test loss: 4.757161959409713
+Training test accuracy: 1.7728258185422938
+Validate test accuracy: 1.76
+Total training time: 17.19851281610354 
+
+Statistics for 900n/3 mlp , after 6 epochs.
+Training test loss: 3.217009043966056
+Validate test loss: 3.2171529340744023
+Training test accuracy: 1.7975246302550194
+Validate test accuracy: 1.7999999999999998
+Total training time: 28.559892347466214 
+
+Statistics for 900n/3 mlp , after 8 epochs.
+Training test loss: 2.533106877842676
+Validate test loss: 2.533211595118046
+Training test accuracy: 1.7975246302550194
+Validate test accuracy: 1.78
+Total training time: 36.96136165115425 
+
+Statistics for 900n/3 mlp , after 10 epochs.
+Training test loss: 2.165442352111114
+Validate test loss: 2.165526970028877
+Training test accuracy: 1.7838030681923938
+Validate test accuracy: 1.78
+Total training time: 45.43524824177965 
+
+Statistics for 900n/3 mlp , after 13 epochs.
+Training test loss: 1.8615711725075237
+Validate test loss: 1.8616397717595101
+Training test accuracy: 2.439693734785879
+Validate test accuracy: 2.52
+Total training time: 58.11544752305386 
+
+Statistics for 900n/3 mlp , after 17 epochs.
+Training test loss: 1.6512143196256797
+Validate test loss: 1.6512720727920531
+Training test accuracy: 2.5467219188232386
+Validate test accuracy: 2.46
+Total training time: 75.07329810704292 
+
+Statistics for 900n/3 mlp , after 22 epochs.
+Training test loss: 1.5139862798886756
+Validate test loss: 1.5140370020270348
+Training test accuracy: 2.5384889815856635
+Validate test accuracy: 2.46
+Total training time: 96.28151118050417 
+
+Statistics for 900n/3 mlp , after 28 epochs.
+Training test loss: 1.4249862222442964
+Validate test loss: 1.4250322303175926
+Training test accuracy: 2.5439776064107136
+Validate test accuracy: 2.52
+Total training time: 121.76249758177508 
+
+Statistics for 900n/3 mlp , after 35 epochs.
+Training test loss: 1.3663104091933216
+Validate test loss: 1.3663531766831876
+Training test accuracy: 2.5412332939981885
+Validate test accuracy: 2.52
+Total training time: 151.70063059489306 
+
+Statistics for 81n/1 mlp , after 1 epochs.
+Training test loss: 20.244505288658893
+Validate test loss: 20.246028456687927
+Training test accuracy: 0.7958505996322621
+Validate test accuracy: 0.76
+Total training time: 1.43114947268041 
+
+Statistics for 81n/1 mlp , after 2 epochs.
+Training test loss: 17.283616586037258
+Validate test loss: 17.28540017604828
+Training test accuracy: 0.7931062872197371
+Validate test accuracy: 0.76
+Total training time: 2.359567572532093 
+
+Statistics for 81n/1 mlp , after 3 epochs.
+Training test loss: 14.820041945062801
+Validate test loss: 14.821966180801391
+Training test accuracy: 0.7931062872197371
+Validate test accuracy: 0.8200000000000001
+Total training time: 3.3045712755916625 
+
+Statistics for 81n/1 mlp , after 4 epochs.
+Training test loss: 12.798694176436577
+Validate test loss: 12.800682075023651
+Training test accuracy: 0.8260380361700376
+Validate test accuracy: 0.88
+Total training time: 4.24162365971717 
+
+Statistics for 81n/1 mlp , after 6 epochs.
+Training test loss: 9.817008593625557
+Validate test loss: 9.819023452997207
+Training test accuracy: 0.853481160295288
+Validate test accuracy: 1.04
+Total training time: 6.4191995333558864 
+
+Statistics for 81n/1 mlp , after 8 epochs.
+Training test loss: 7.838583509017432
+Validate test loss: 7.840591032505036
+Training test accuracy: 0.916600345783364
+Validate test accuracy: 1.0
+Total training time: 8.29955895485785 
+
+Statistics for 81n/1 mlp , after 10 epochs.
+Training test loss: 6.491666134876138
+Validate test loss: 6.493657641410827
+Training test accuracy: 0.98520815609649
+Validate test accuracy: 1.06
+Total training time: 10.184528636668354 
+
+Statistics for 81n/1 mlp , after 13 epochs.
+Training test loss: 5.1681970793929395
+Validate test loss: 5.170146997570992
+Training test accuracy: 1.0757704657098164
+Validate test accuracy: 1.1199999999999999
+Total training time: 13.008727105028136 
+
+Statistics for 81n/1 mlp , after 17 epochs.
+Training test loss: 4.106306449487078
+Validate test loss: 4.108174631595611
+Training test accuracy: 1.1471225884354674
+Validate test accuracy: 1.0999999999999999
+Total training time: 16.785348585900245 
+
+Statistics for 81n/1 mlp , after 22 epochs.
+Training test loss: 3.331054402771643
+Validate test loss: 3.3328045225143432
+Training test accuracy: 1.182798649798293
+Validate test accuracy: 1.1400000000000001
+Total training time: 21.50048120233169 
+
+Statistics for 81n/1 mlp , after 28 epochs.
+Training test loss: 2.7843560815735056
+Validate test loss: 2.7859685677289963
+Training test accuracy: 1.2376848980487938
+Validate test accuracy: 1.08
+Total training time: 27.149658810448507 
+
+Statistics for 81n/1 mlp , after 35 epochs.
+Training test loss: 2.4003163353539008
+Validate test loss: 2.4017877191305157
+Training test accuracy: 1.2843382090617197
+Validate test accuracy: 1.18
+Total training time: 33.75723366794433 
+
+Statistics for 224n/2 cnn , after 1 epochs.
+Training test loss: 17.510807549849755
+Validate test loss: 17.50914266347885
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 14.215479472934444 
+
+Statistics for 224n/2 cnn , after 2 epochs.
+Training test loss: 11.646046871053862
+Validate test loss: 11.645111982822417
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 27.31341953613072 
+
+Statistics for 224n/2 cnn , after 3 epochs.
+Training test loss: 8.125030366067106
+Validate test loss: 8.124410146474839
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 40.628339348769586 
+
+Statistics for 224n/2 cnn , after 4 epochs.
+Training test loss: 6.014728909930635
+Validate test loss: 6.014266310930251
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 54.98357072648362 
+
+Statistics for 224n/2 cnn , after 6 epochs.
+Training test loss: 3.909739947182201
+Validate test loss: 3.909441631436348
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 88.86582515696479 
+
+Statistics for 224n/2 cnn , after 8 epochs.
+Training test loss: 2.975221028226714
+Validate test loss: 2.9750120097398756
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 115.7424917780353 
+
+Statistics for 224n/2 cnn , after 10 epochs.
+Training test loss: 2.4806901816540514
+Validate test loss: 2.4805368965864183
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 142.31990770685832 
+
+Statistics for 224n/2 cnn , after 13 epochs.
+Training test loss: 2.077650287987264
+Validate test loss: 2.077548309266567
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 182.40922569903796 
+
+Statistics for 224n/2 cnn , after 17 epochs.
+Training test loss: 1.8014191063161087
+Validate test loss: 1.8013558083772658
+Training test accuracy: 1.1635884629106177
+Validate test accuracy: 1.18
+Total training time: 235.98891036250905 
+
+Statistics for 224n/2 cnn , after 22 epochs.
+Training test loss: 1.6217856858729314
+Validate test loss: 1.621749050617218
+Training test accuracy: 1.3282472076621203
+Validate test accuracy: 1.4200000000000002
+Total training time: 303.2865840789934 
+
+Statistics for 224n/2 cnn , after 28 epochs.
+Training test loss: 1.5049456817775082
+Validate test loss: 1.5049269360303879
+Training test accuracy: 2.4287164851868956
+Validate test accuracy: 2.4
+Total training time: 383.939792061969 
+
+Statistics for 224n/2 cnn , after 35 epochs.
+Training test loss: 1.4273580538965713
+Validate test loss: 1.4273512825369836
+Training test accuracy: 2.4287164851868956
+Validate test accuracy: 2.4
+Total training time: 478.590357584628 
+
+Statistics for 224n/3 cnn , after 1 epochs.
+Training test loss: 1.219518648510551
+Validate test loss: 1.2194897425174713
+Training test accuracy: 0.845248223057713
+Validate test accuracy: 1.0
+Total training time: 17.07081783878109 
+
+Statistics for 224n/3 cnn , after 2 epochs.
+Training test loss: 1.219517915344815
+Validate test loss: 1.2194890409708024
+Training test accuracy: 0.845248223057713
+Validate test accuracy: 1.0
+Total training time: 30.816009235176516 
+
+Statistics for 224n/3 cnn , after 3 epochs.
+Training test loss: 1.2195171833010932
+Validate test loss: 1.2194883346557617
+Training test accuracy: 0.847992535470238
+Validate test accuracy: 1.0
+Total training time: 45.241481497403946 
+
+Statistics for 224n/3 cnn , after 4 epochs.
+Training test loss: 1.2195164574501718
+Validate test loss: 1.2194876366853715
+Training test accuracy: 0.8507368478827629
+Validate test accuracy: 1.0
+Total training time: 61.54161105563576 
+
+Statistics for 224n/3 cnn , after 6 epochs.
+Training test loss: 1.2195150121149267
+Validate test loss: 1.2194862392544745
+Training test accuracy: 0.8507368478827629
+Validate test accuracy: 1.0
+Total training time: 93.36463851690024 
+
+Statistics for 224n/3 cnn , after 8 epochs.
+Training test loss: 1.2195135676793376
+Validate test loss: 1.219484860599041
+Training test accuracy: 0.853481160295288
+Validate test accuracy: 1.0
+Total training time: 121.58277461752971 
+
+Statistics for 224n/3 cnn , after 10 epochs.
+Training test loss: 1.2195121092121861
+Validate test loss: 1.2194834557175638
+Training test accuracy: 0.853481160295288
+Validate test accuracy: 1.0
+Total training time: 149.4957444126792 
+
+Statistics for 224n/3 cnn , after 13 epochs.
+Training test loss: 1.2195099567552163
+Validate test loss: 1.2194813698530198
+Training test accuracy: 0.856225472707813
+Validate test accuracy: 0.98
+Total training time: 191.3010264998369 
+
+Statistics for 224n/3 cnn , after 17 epochs.
+Training test loss: 1.2195070941504065
+Validate test loss: 1.2194786182045936
+Training test accuracy: 0.8589697851203381
+Validate test accuracy: 0.96
+Total training time: 247.25540656467467 
+
+Statistics for 224n/3 cnn , after 22 epochs.
+Training test loss: 1.219503613080853
+Validate test loss: 1.2194752749800681
+Training test accuracy: 0.8589697851203381
+Validate test accuracy: 0.96
+Total training time: 317.30718442409136 
+
+Statistics for 224n/3 cnn , after 28 epochs.
+Training test loss: 1.2194994237087764
+Validate test loss: 1.219471248537302
+Training test accuracy: 0.853481160295288
+Validate test accuracy: 0.96
+Total training time: 401.390599993356 
+
+Statistics for 224n/3 cnn , after 35 epochs.
+Training test loss: 1.219494629062647
+Validate test loss: 1.21946662068367
+Training test accuracy: 0.856225472707813
+Validate test accuracy: 0.96
+Total training time: 499.86902991564045 
