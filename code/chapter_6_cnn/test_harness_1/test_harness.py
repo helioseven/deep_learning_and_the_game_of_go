@@ -104,13 +104,13 @@ scores = [[[0 for a in range(z)] for b in range(y)] for c in range(x)]
 times = [[0 for b in range(y)] for c in range(x)]
 model = [model_0, model_1, model_2, model_3, model_4, model_5, model_6]
 names = [
-    '81n/1 mlp',
-    '300n/1 mlp',
-    '700n/1 mlp',
-    '2100n/1 mlp',
-    '700n/3 mlp',
-    '224n/2 cnn',
-    '224n/3 cnn']
+    '81n-1 mlp',
+    '300n-1 mlp',
+    '700n-1 mlp',
+    '2100n-1 mlp',
+    '700n-3 mlp',
+    '224n-2 cnn',
+    '224n-3 cnn']
 
 for n in range(x):
     for i in range(y):
