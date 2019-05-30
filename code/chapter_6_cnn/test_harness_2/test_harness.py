@@ -101,7 +101,7 @@ names = [
     '2_32x64-3x3_3x3-128d_cnn',
     '2_32x64-3x3_3x3-256d_cnn',
     '3_32x64xMP-3x3_3x3_2x2-128d_cnn']
-e = 2**1
+e = 2**12
 callback_times = TimeHistory()
 model_histories = [{} for x in range(m)]
 model_times = [[] for x in range(m)]
