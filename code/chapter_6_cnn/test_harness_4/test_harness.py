@@ -111,7 +111,7 @@ names = [
     'c64-c32-mp-do6-d-do6-d',
     'c32-c64-mp-do6-d-do6-d',
     'c32-do6-c64-mp-do6-d-do6-d']
-e = 2**2
+e = 2**12
 callback_times = TimeHistory()
 model_histories = [{} for x in range(m)]
 model_times = [[] for x in range(m)]
