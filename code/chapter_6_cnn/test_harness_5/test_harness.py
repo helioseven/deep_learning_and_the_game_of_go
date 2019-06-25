@@ -146,9 +146,9 @@ fig.savefig(file1, dpi=2000, bbox_inches='tight')
 fig = plt.figure()
 for i in range(m):
     model_history = [x * 100 for x in model_histories[i].history['acc']]
-    plt.plot(callback_times.times, model_history, colors[i] + '-', linewidth=0.25)
+    plt.plot(model_times[i], model_history, colors[i] + '-', linewidth=0.4)
     model_history = [x * 100 for x in model_histories[i].history['val_acc']]
-    plt.plot(callback_times.times, model_history, colors[i] + '--', linewidth=0.25)
+    plt.plot(model_times[i], model_history, colors[i] + '--', linewidth=0.4)
 plt.title('Test % / Time')
 plt.ylabel('Test %')
 plt.xlabel('Seconds')
