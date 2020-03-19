@@ -77,8 +77,8 @@ def main():
 
     args = parser.parse_args()
 
-    agent1 = agent.load_policy_agent(h5py.File(args.agent1))
-    agent2 = agent.load_policy_agent(h5py.File(args.agent2))
+    agent1 = agent.load_policy_agent(h5py.File(args.agent1, 'r'))
+    agent2 = agent.load_policy_agent(h5py.File(args.agent2, 'r'))
 
     wins = 0
     losses = 0

@@ -24,6 +24,7 @@ def main():
         model.add(layer)
     model.add(Dense(encoder.num_points()))
     model.add(Activation('softmax'))
+    model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
     new_agent = agent.PolicyAgent(model, encoder)
 
     with h5py.File(output_file, 'w') as outf:

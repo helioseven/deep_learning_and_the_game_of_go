@@ -81,8 +81,8 @@ def main():
     global BOARD_SIZE
     BOARD_SIZE = args.board_size
 
-    agent1 = agent.load_policy_agent(h5py.File(agent_filename))
-    agent2 = agent.load_policy_agent(h5py.File(agent_filename))
+    agent1 = agent.load_policy_agent(h5py.File(agent_filename, 'r'))
+    agent2 = agent.load_policy_agent(h5py.File(agent_filename, 'r'))
     collector1 = rl.ExperienceCollector()
     collector2 = rl.ExperienceCollector()
     agent1.set_collector(collector1)
