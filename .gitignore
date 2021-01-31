@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -110,5 +111,16 @@ stem*.png
 # Mac OS nonsense
 .DS_Store
 
-./kgs_index.html
-./data
+# SublimeText
+*.sublime-project
+*.sublime-workspace
+
+# Specific ignores
+**/node_modules
+code/examples/kgs_index.html
+code/examples/test_samples.py
+code/examples/data/
+code/agents/
+
+*.h5
+*.hdf5
