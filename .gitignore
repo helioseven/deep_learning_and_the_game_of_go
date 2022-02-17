@@ -118,8 +118,11 @@ stem*.png
 # Specific ignores
 **/node_modules
 code/examples/kgs_index.html
+code/kgs_index.html
 code/examples/test_samples.py
+code/test_samples.py
 code/examples/data/
+code/data/
 code/agents/
 
 *.h5

@@ -15,7 +15,7 @@ from dlgo.agent.predict import DeepLearningAgent, load_prediction_agent
 from dlgo.data.parallel_processor import GoDataProcessor
 from dlgo.encoders.sevenplane import SevenPlaneEncoder
 from dlgo.httpfrontend import get_web_app
-from dlgo.networks import large
+from dlgo.networks import drew_example
 
 from definitions import CODE_ROOT_DIR
 # end::e2e_imports[]
@@ -38,7 +38,7 @@ def main():
 	# tag::e2e_model[]
 	input_shape = (go_board_rows, go_board_cols, encoder.num_planes)
 	model = Sequential()
-	network_layers = large.layers(input_shape)
+	network_layers = drew_example.layers(input_shape)
 	for layer in network_layers:
 		model.add(layer)
 	model.add(Dense(nb_classes, activation='softmax'))

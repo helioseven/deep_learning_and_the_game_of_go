@@ -19,6 +19,8 @@ from dlgo.data.sampling import Sampler
 from dlgo.data.generator import DataGenerator
 from dlgo.encoders.base import get_encoder_by_name
 
+from definitions import CODE_ROOT_DIR
+
 
 def worker(jobinfo):
     try:
@@ -32,7 +34,8 @@ class GoDataProcessor:
     def __init__(self, encoder='simple', data_directory='data'):
         self.encoder_string = encoder
         self.encoder = get_encoder_by_name(encoder, 19)
-        self.data_dir = data_directory
+        fpath = os.path.join(CODE_ROOT_DIR, data_directory)
+        self.data_dir = fpath
 
 # tag::load_generator[]
     def load_go_data(self, data_type='train', num_samples=1000,

@@ -8,6 +8,8 @@ import random
 from dlgo.data.index_processor import KGSIndex
 from six.moves import range
 
+from definitions import CODE_ROOT_DIR
+
 
 class Sampler:
     """Sample training and test data from zipped sgf files such that test data is kept stable."""
@@ -16,7 +18,7 @@ class Sampler:
         self.num_test_games = num_test_games
         self.test_games = []
         self.train_games = []
-        self.test_folder = 'test_samples.py'
+        self.test_folder = os.path.join(CODE_ROOT_DIR, 'test_samples.py')
         self.cap_year = cap_year
 
         random.seed(seed)

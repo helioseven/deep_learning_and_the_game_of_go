@@ -12,6 +12,8 @@ if sys.version_info[0] == 3:
 else:
     from urllib import urlopen, urlretrieve
 
+from definitions import CODE_ROOT_DIR
+
 
 def worker(url_and_target):  # Parallelize data download via multiprocessing
     try:
@@ -37,7 +39,7 @@ class KGSIndex:
         data_directory: name of directory relative to current path to store SGF data
         """
         self.kgs_url = kgs_url
-        self.index_page = index_page
+        self.index_page = os.path.join(CODE_ROOT_DIR, index_page)
         self.data_directory = data_directory
         self.file_info = []
         self.urls = []
