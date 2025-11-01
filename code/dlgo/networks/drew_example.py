@@ -1,6 +1,4 @@
-from keras.layers.core import Activation, Dense, Dropout, Flatten
-from keras.layers.convolutional import Conv2D, ZeroPadding2D
-from keras.layers.pooling import MaxPooling2D
+from keras.layers import Activation, Conv2D, Dense, Dropout, Flatten, MaxPooling2D, ZeroPadding2D
 
 def layers(input_shape):
     return [

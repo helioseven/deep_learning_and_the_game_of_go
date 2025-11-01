@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from keras.layers.core import Dense, Activation, Flatten
+from keras.layers import Dense, Activation, Flatten
 
 
 def layers(input_shape):
