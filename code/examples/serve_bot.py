@@ -8,13 +8,16 @@ sys.path.insert(0, os.path.join(dir_path, '..'))
 # tag::e2e_imports[]
 import h5py
 
+from definitions import CODE_ROOT_DIR
+
 # from dlgo import goboard_fast as goboard
 from dlgo.agent.predict import DeepLearningAgent, load_prediction_agent
 from dlgo.httpfrontend import get_web_app
 # end::e2e_imports[]
 
 # tag::e2e_load_agent[]
-model_file = h5py.File("../agents/deep_bot.h5", "r")
+fpath = os.path.join(CODE_ROOT_DIR, "agents/deep_bot.h5")
+model_file = h5py.File(fpath, "r")
 bot_from_file = load_prediction_agent(model_file)
 model_file.close()
 
